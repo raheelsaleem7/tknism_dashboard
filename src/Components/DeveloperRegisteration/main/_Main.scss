@@ -1,0 +1,228 @@
+@import '../../../assests/fonts/variable';
+
+.main {
+     
+    .main_container {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1440px;
+        @media screen and (max-width:480px) {
+            max-width: 480px;
+        }
+        @media screen and (max-width:768px) {
+            max-width: 768px;
+        }
+        .main_library {
+            width: 75%;
+            @media screen and (max-width:480px) {
+                width: 100%;
+            }
+        
+         .main_heading {
+            padding: 10px;
+            @media screen and (max-width:480px) {
+                  padding: 22px;
+            }
+            h3 {
+             font-family: $announcementFont;
+            }
+            span {
+             color: $btnColor;
+             font-family: $titleFont;
+             font-size: 12px;
+             font-weight: 600;
+            }
+         }
+        
+       .div_icon {
+      
+        text-align: -webkit-center;
+        @media screen and (max-width:480px) {
+              margin-bottom: 1px;
+        }
+        @media screen and (max-width:768px) {
+           
+        }
+        .main_content {
+         background-color: $backIcon;
+         width: 70px;
+         height: 70px;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        }
+        .upload_clr {
+            color: $uploadLogo;
+            font-family: $uploadFont;
+        }
+    }
+   .for_email {
+      
+       @media screen and (max-width:480px) {
+       
+           
+       }
+  
+    .form_name {
+        display: table-cell;    
+        color: $checkColor;
+        font-family: $lableFont;
+        font-size: 13px;
+        font-weight: 600;
+        @media screen and (max-width:480px) {
+            font-size: 16px;
+            
+         }
+       
+     }
+     .input_data {
+        background: $backIcon;
+    margin: 6px 0 14px 0;
+    padding: 8px;
+   border: none;
+    padding: 14px 5px;
+    width: 297px;
+    color: $inputColor;
+    font-family: $inputFont;
+    font-size: 15px;
+    border-radius: 3px;
+        @media screen and (max-width:480px) {
+            width: 100%;
+      }
+        &:focus {
+            border: none;
+            outline: none;
+           
+           
+           
+        }
+        
+        &::placeholder {
+           
+            color: $placeColor;  
+            opacity: .9;
+        }
+    }
+}
+    .for_forms  {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 52px;
+     @media screen and (max-width:480px) {
+         display: flex;
+         flex-direction: column;
+         padding: 0px 47px;
+     }
+    
+    .form_name {
+        display: table-cell;    
+        color: $checkColor;
+        font-family: $lableFont;
+        font-size: 13px;
+        font-weight: 600;
+        @media screen and (max-width:480px) {
+           font-size: 16px;
+        }
+     }
+     .input_data {
+        background: $backIcon;
+        margin: 6px 0 14px 0;
+       border: none;
+        padding: 14px 13px;
+        width: 340px;
+        color: $inputColor;
+        font-family: $inputFont;
+        font-size: 15px;
+        border-radius: 3px;
+        @media screen and (max-width:480px) {
+            width: 100%;
+      }
+
+      @media screen and (max-width:768px) {
+       width: 100%;
+  }
+        &:focus {
+            border: none;
+            outline: none;
+           
+           
+        }
+        
+        &::placeholder {
+           font-size: 12px;
+           color: $placeColor;  
+            opacity: .9;
+        }
+    }
+}
+.head_ofc {
+    @media screen and (max-width:480px) {
+        padding: 1px 44px;
+    }
+.form_name2 {
+    display: table-cell;    
+    color: $checkColor;
+    font-family: $lableFont;
+    font-size: 13px;
+    font-weight: 600;
+    @media screen and (max-width:480px) {
+        font-size: 16px;
+     }
+ }
+ .input_data2 {
+    background: $backIcon;
+    margin: 6px 0 14px 0;
+   border: none;
+    padding: 14px 13px;
+    width: 98%;
+    color: $inputColor;
+    font-family: $inputFont;
+    font-size: 15px;
+    border-radius: 3px;
+    @media screen and (max-width:480px) {
+        width: 100%;
+  }
+  @media screen and (max-width:768px) {
+  }
+    &:focus {
+        border: none;
+        outline: none;
+       
+    }
+    
+    &::placeholder {
+        font-size: 12px;
+        color: $placeColor;  
+        opacity: .9;
+    }
+}
+    }
+     .for_check {
+        display: flex;
+        padding: 22px 1px;
+        @media screen and (max-width:480px) {
+            padding: 1px 32px;
+        }   
+      
+        .checkbox {
+            margin-top: 10px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+    .para {
+        color: $checkColor;
+        font-size: 13px;
+        font-family: $lableFont;
+        @media screen and (max-width:768px) {
+          
+        }   
+    } 
+    .terms {
+       color: $iconColor;
+       text-decoration: underline;
+    }
+    }
+}
+}
+}

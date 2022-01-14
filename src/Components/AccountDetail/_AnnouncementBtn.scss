@@ -1,0 +1,169 @@
+@import "../../assests/fonts/variable";
+
+.ann_btn {
+    background: white;
+    width: 95%;    
+    border-radius: 9px;
+    height: 85%;
+    margin-left: 21px;
+    @media screen and (max-width:480px) {
+       margin-left: 0;
+       width: 100%;
+       height: 90%;
+    }
+    .ann_container {
+        padding: 8px;
+        .heading {
+               font-family: $titleFont;
+               color: $titleColor;
+               font-size: 16px;
+        }
+        .for_button {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid $borderColor;
+            padding: 0px;
+            .all_btn{
+                border-bottom: 1px solid $nextHover;
+                padding: 10px;
+
+                .active-tab {
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    transition: 0.9s;
+                     color:$dashtext;
+                    
+                     font-weight: 700;
+                     
+                }
+                .not-active-tab {
+                    border: none;
+                    overflow: none;
+                    background-color: transparent;
+                   font-family: $btnFont;
+                   color: $btnColor;
+                     cursor: pointer;
+                     font-weight: 700;
+                     transition: .3s;
+                     &:hover {
+                        color: $headerHover;
+                    }
+                } 
+            }
+        }
+            .not-active{
+                display:none;
+            }
+        }
+        .next_btn  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+    .next {
+        border: none;
+        outline: none;
+        background-color: $headerHover;
+        color: white;
+        padding: 12px 60px;
+        border-radius: 3px;
+        transition: .3s;
+        font-family: $uploadFont;
+        cursor: pointer;
+        font-size: 13px;
+        &:hover {
+          background-color: $nextHover;
+        }
+    }
+   }
+   .last_btn {
+    text-align-last: end;
+    @media screen and (max-width:480px) {
+        padding-top: 13px;
+    }
+
+.back {
+    background-color: $dashHover;
+    color: $dashtext;
+    border: none;
+    outline: none;
+    padding: 12px 28px;
+    margin-right: 18px;
+    font-family: $titleFont;
+   cursor: pointer;
+   transition: .3s;
+   border-radius: 3px;
+   font-weight: 800;
+   &:hover {
+       background-color: $headerHover;
+       color: white;
+   }
+}
+.next {
+border: none;
+outline: none;
+background-color: $headerHover;
+color: white;
+padding: 12px 28px;
+border-radius: 3px;
+transition: .3s;
+font-family: $uploadFont;
+cursor: pointer;
+font-size: 13px;
+&:hover {
+    background-color: $nextHover;
+}
+}
+}
+.last_buttons {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding: 41px;
+     @media screen and (max-width:480px) {
+            padding:10px;
+    }
+     .btn_previous {
+         background-color: $dashHover;
+         color: $dashtext;
+         border: none;
+         outline: none;
+         padding: 10px;
+         margin-right: 18px;
+         font-family: $titleFont;
+        cursor: pointer;
+        transition: .3s;
+        border-radius: 3px;
+        font-weight: 800;
+        @media screen and (max-width:480px) {
+            font-size: 9px;
+        }
+        &:hover {
+            background-color: $headerHover;
+            color: white;
+        }
+     }
+     .send {
+         border: none;
+         outline: none;
+         background-color: $headerHover;
+         color: white;
+         margin-right: 18px;
+         padding: 10px 42px;
+         font-family: $titleFont;
+         cursor: pointer;
+         transition: .3s;
+         border-radius: 3px;
+         @media screen and (max-width:480px) {
+            font-size: 9px;
+        }
+         &:hover {
+            background-color: $nextHover;
+           
+         }
+     }
+}
+    }

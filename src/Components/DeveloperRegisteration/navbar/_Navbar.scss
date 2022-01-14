@@ -1,0 +1,31 @@
+@import '../../../assests/fonts/variable';
+
+.navbar {
+    
+    .navbar_content {
+       background-color:$navColor ;
+       text-align-last: end;
+       padding: 7px 62px;
+       @media screen and (max-width:480px) {
+        background-image: url("../../../images/Rectangle\ 16901.png");
+        width: 100%;
+    
+     }
+     @media screen and (max-width:768px) {
+       
+        width: 100%;
+    
+     }
+        .login {
+          color: $loginColor;
+          cursor: pointer;
+          @media screen and (max-width:768px) {
+          
+         }
+         
+          &:hover {
+              opacity: .8;
+          }
+        }
+    }
+}

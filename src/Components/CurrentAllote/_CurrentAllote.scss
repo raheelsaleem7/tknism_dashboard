@@ -1,0 +1,280 @@
+@import '../../assests/fonts/variable';
+
+.allote {
+    background-color: $backDash;
+    .allote_container {
+                 display: flex;
+                 .main_allote {
+                    width: 79%;
+                    @media screen and (max-width:480px) {
+                         width: 100%;
+                    }
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                   }
+                 
+        .allote_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 23px;
+            h3 {
+                font-family: "Spline Sans", sans-serif;
+            }
+            .invite_btn {
+
+                button {
+                    border: none;
+                    outline: none;
+                    background-color: $headerHover;
+                    color: white;
+                    padding: 10px 23px;
+                    font-family: $titleFont;
+                    cursor: pointer;
+                    transition: .3s;
+                    border-radius: 3px;
+                    &:hover {
+                       background-color: $dashHover;
+                       color: $dashtext;
+                    }
+                }
+            }
+        }
+        .for_table {
+            background: white;
+            width: 95%;
+            border-radius: 9px;
+            height: 73%;
+            margin-left: 21px;
+            @media screen and (max-width:480px) {
+               
+                width: 355px;
+                margin-left: 71px;
+                overflow-y: scroll;
+            }
+            @media screen and (max-width:768px) {
+               
+               
+            }
+            table {
+                width: 100%;
+                .th_nav {
+                    background-color: $trBack;
+                    height: 36px;
+                    color: $trColor;
+                    font-family: $titleFont;
+                    font-size: 13px;
+                    border-radius: 9px 9px 0 0;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    bottom: 2px;
+
+                      @media screen and (max-width:480px) {
+                        
+                      }
+                    .sr {
+                        font-size: 13px;
+                        padding-left: 36px;
+                        @media screen and (max-width:480px) {
+                            padding-left: 6px;
+                            font-size: 10px;
+                        }  
+                        @media screen and (max-width:768px) {
+                            padding-left: 13px;
+                            font-size: 10px;
+                        }  
+                        @media screen and (max-width:1024px) {
+                            padding-left: 27px;
+                            font-size: 14px;
+                        }
+                      
+                    }
+                    .name {
+                        font-size: 13px;
+                        padding-left: 69px;
+                        @media screen and (max-width:480px) {
+                            padding-left: 14px;
+                            font-size: 10px;
+                        }
+                        @media screen and (max-width:768px) {
+                            padding-left: 16px;
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width:1024px) {
+                            padding-left: 43px;
+                            font-size: 14px;
+                        }
+                      
+                    }
+                    .member {
+                        font-size: 13px;
+                        padding-left: 94px;
+                        @media screen and (max-width:480px) {
+                            padding-left: 19px;
+                            font-size: 10px;
+                        }
+                        @media screen and (max-width:768px) {
+                            padding-left: 15px;
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width:1024px) {
+                            padding-left: 70px;
+                            font-size: 14px;
+                        }
+                    }
+                    .contact_no {
+                        font-size: 13px;
+                        padding-left: 40px;
+                        @media screen and (max-width:480px) {
+                            padding-left: 6px;
+                            font-size: 10px;
+                        }
+                        @media screen and (max-width:768px) {
+                            padding-left: 14px;
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width:1024px) {
+                            padding-left: 11px;
+                            font-size: 14px;
+                        }
+                    }
+                    .email {
+                        font-size: 13px;
+                        padding-left: 53px;
+                        @media screen and (max-width:480px) {
+                            padding-left: 8px;
+                            font-size: 10px;
+                        }
+                        @media screen and (max-width:768px) {
+                            padding-left: 20px;
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width:1024px) {
+                            padding-left: 22px;
+                            font-size: 14px;
+                        }
+                    }
+                    .asset {
+                        font-size: 13px;
+                        padding-left: 126px;
+                        @media screen and (max-width:480px) {
+                            padding-left: 70px;
+                            font-size: 10px;
+                        }
+                        @media screen and (max-width:768px) {
+                            padding-left: 58px;
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width:1024px) {
+                            padding-left: 105px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .for_boundaries {
+                    border-bottom: 1px solid #eaeaea;
+                tr {
+             
+                }
+                td {
+                    padding: 21px 39px;
+                    font-size: 12px;
+                    font-family: $titleFont;
+                    color: $titleColor;
+                    font-weight: 600;
+                    @media screen and (max-width:768px) {
+                        padding: 26px;
+                
+                       }
+                       @media screen and (max-width:1024px) {
+                        padding: 27px;
+                
+                       }
+                }
+                .assests {
+                    color: $headerHover;
+                    text-decoration: underline;
+                }
+                }      
+            }
+        }
+           .allote_footer {
+
+            .steps {
+                display: flex;
+                justify-content: space-between;
+                padding: 19px;
+                align-content: center;
+                @media screen and (max-width:480px) {
+                    padding: 14px;
+                    justify-content: space-around;
+                }
+              
+                 .end {
+                     display: flex;
+                 
+                .left_arrow {
+                    background: white;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .numbers {
+                    display: flex;
+                    align-items: center;
+                    .steps_count {
+                         display: flex;
+                         
+                         p {
+                            font-size: 12px;
+                            font-family: $announcementFont;
+                            color: #858585;
+                            font-weight: 600;
+                            margin-left: 12px;
+                            margin-right: 12px;
+                            transition: .3s;
+                            &:hover {
+                                background-color: #e0ece5;
+                                color: #087d40;
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                align-items: center;
+                                justify-content: center;
+                                display: flex;
+                            }
+                         }
+                    }
+                }
+                }
+            }
+               .show {
+
+                display: flex;
+                align-items: center;
+            
+            span {
+                color: $trColor;
+                font-family: $announcementFont;
+                font-size: 13px;
+                font-weight: 600;
+            }                
+               }
+               .rows {
+                  background-color: white;
+                  padding: 5px;
+                p {
+                    font-size: 12px;
+                    font-family: $announcementFont;
+                    color: $titleColor;
+                    font-weight: 600;
+                }
+               }
+           }
+    }
+    }
+}

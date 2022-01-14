@@ -1,0 +1,212 @@
+@import "../../../assests/fonts/variable";
+
+.select {
+      @media screen and (max-width:480px) {
+        overflow: scroll;
+    width: 100%;
+    height: 269px;
+      }
+    .select_container {
+        display: flex;
+        justify-content: space-around;
+        @media screen and (max-width:480px) {
+         display: flex;
+         flex-direction: column;
+      }
+        .select_content {
+          @media screen and (max-width:480px) {
+          //  align-self: center;
+        }
+            .select_heading {
+                   border-bottom: 1px solid $borderColor;
+                   padding: 10px;
+                .slt_text {
+                    font-family: $titleFont;
+                    color: $titleColor;
+                    font-size: 16px;
+                }
+            }
+            .select_check {
+                padding: 10px;
+                .form-group {
+                    display: block;
+                    margin-bottom: 15px;
+                  }
+                  .form-group input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+                  }
+                  .form-group label {
+                    color: #7e7e7e;
+                    font-family: $btnFont;
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-left: 8px;
+                    position: relative;
+                  }
+                  .form-group label:before {
+                    content:'';
+                    -webkit-appearance: none;
+                    background-color: transparent;
+                    border: 1px solid #9b9898;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                    padding: 6px;
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    margin-right: 5px;
+                     border-radius: 12px;
+                  }
+                  .form-group input:checked + label:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    width: 3px;
+                    height: 7px;
+                    border:1px solid #9b9898;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                    border-radius: 10px;
+                  }
+                    .all_text {
+                         color: $btnColor;
+                         font-family: $btnFont;
+                         font-weight: 700;
+                         font-size: 14px;
+                          margin-left: 8px;
+                    }
+                }
+            
+            .search_box {
+                border: none;
+                outline: none;
+                background: $backIcon;
+                padding: 10px;
+                @media screen and (max-width:480px) {
+                 padding: 8px;
+                 width: 43%;
+                 margin-left: 19px;
+              }
+                input{
+                    border: none;
+                    background: $backIcon;
+                    outline: none;
+                    cursor: pointer;
+                   &::placeholder {
+                       color: $placeColor;
+                   }    
+                }
+                svg {
+                   width: 12px !important;
+                   fill:$svgColor;
+                  
+                }
+              }
+                .for_contents {
+                  @media screen and (max-width:480px) {
+                    text-align: -webkit-center;
+                       display: grid;
+                       grid-template-columns: auto auto;
+                       margin-left: 29px;
+                 }
+                
+            }
+            .clients_info {
+                display: flex;
+                background-color:$dashHover;
+                padding: 5px 19px;
+                margin-top: 6px;
+                justify-content: space-between;
+                border-radius: 4px;
+                align-items: center;
+                @media screen and (max-width:480px) {
+                  padding: 6px;
+                  width: 83%;
+              }
+                .form-group {
+                    display: block;
+                    margin-bottom: 15px;
+                  }
+                  .form-group input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+                  }
+                 
+                  .form-group :before {
+                    content:'';
+                    -webkit-appearance: none;
+                    background-color: $headerHover;
+                    border: 1px solid green;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                    padding: 6px;
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    margin-right: 5px;
+                     border-radius: 12px;
+                  }
+                  .form-group input:checked + :after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    width: 3px;
+                    height: 7px;
+                    border:white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                    border-radius: 10px;
+                  }
+                .image {
+                   
+                }
+                .img_info {
+
+                    .green {
+                        color:$dashtext;
+                        font-family: $btnFont;
+                        font-weight: 800;
+                        font-size: 13px;
+                    }
+                    .email {
+                       color: $btnColor;
+                       font-family: $btnFont;
+                       font-weight: 700;
+                       font-size: 10px;
+                    }
+                }
+            }
+          
+            .div_img {
+                display: flex;
+                margin-top: 16px;
+                @media screen and (max-width:480px) {
+                  display: flex;
+                  justify-content: center;
+                }
+                p {
+                    color: $btnColor;
+                    font-family: $btnFont;
+                    font-weight: 700;
+                    font-size: 8px;
+                    margin-left: 3px;
+                }
+            }
+
+        }
+
+    }
+}

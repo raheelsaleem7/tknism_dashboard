@@ -1,0 +1,95 @@
+@import '../../../assests/fonts/variable';
+
+.side {
+    width: 25%;
+    @media screen  and (max-width:480px) {
+        display: none;
+        
+    }
+
+    @media screen  and (max-width:768px) {
+     width: 22%;
+        
+    }
+    .side_content {
+       
+        .akru {
+            background-image: url("../../../images/Rectangle\ 16901.png");
+            max-width: 75%;
+            background-position: center;
+            display: flex;
+            @media screen  and (max-width:768px) {
+               
+                
+            }
+           
+        
+    .img1 {
+    
+        height: 530px;
+    
+    }
+    }
+    .content {
+        position: absolute;
+        text-align-last: center;
+        padding: 35px 9px;
+        @media screen  and (max-width:768px) {
+        padding: 10px;
+                
+        }
+        .logo {
+            height: 38px;
+        }
+        .real {
+            padding-top: 36px;
+            color: white;
+            font-family: $titleFont;
+            line-height: 21px;
+            letter-spacing: 1px;
+            @media screen  and (max-width:768px) {
+                font-size: 10px;
+                padding-top: 10px;
+         }
+        }
+    }
+}
+    .last {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 21px;
+        align-self: flex-end;
+        left: 15px;
+        @media screen  and (max-width:768px) {
+            position: absolute;
+            bottom: 161px;
+            left: 1px;
+     }
+     @media screen  and (max-width:1024px) {
+        position: absolute;
+        bottom: 161px;
+        left: 1px;
+ }
+ @media screen  and (max-width:1440px) {
+    position: absolute;
+    bottom: 9px;
+    left: 1px;
+}
+       
+        .logo {
+         width:20px ;
+         margin-left: 19px;
+        }
+         .power {
+            color: white;
+            font-size: 10px;
+            margin-left: 21px;
+            font-family: $realFont;
+            @media screen and (max-width:768px) {
+              margin-left: 5px;
+            }
+             }
+        
+    }
+}

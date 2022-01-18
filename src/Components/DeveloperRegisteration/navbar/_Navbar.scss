@@ -1,31 +1,103 @@
 @import '../../../assests/fonts/variable';
 
 .navbar {
-    
-    .navbar_content {
-       background-color:$navColor ;
-       text-align-last: end;
-       padding: 7px 62px;
-       @media screen and (max-width:480px) {
-        background-image: url("../../../images/Rectangle\ 16901.png");
-        width: 100%;
-    
-     }
-     @media screen and (max-width:768px) {
-       
-        width: 100%;
-    
-     }
-        .login {
-          color: $loginColor;
-          cursor: pointer;
-          @media screen and (max-width:768px) {
-          
+    .nav_container {
+           background-color:$navColor ;
+           text-align-last: right;
+           padding: 7px 30px;
+           @media screen and (max-width:480px) {
+            background-image: url("../../../images/Rectangle\ 16901.png");
+            width: 100%;
+            height: 35px;
+        
          }
          
-          &:hover {
-              opacity: .8;
+         @media screen and (max-width:768px) {
+        
+            align-items: center;
+         } 
+         @media screen and (max-width:1024px) {
+          
+             align-items: center;
+          } 
+       .menu_bar{
+           display: flex;
+           flex-direction: column;
+           cursor: pointer;
+           transition: .3s;
+           display: none;
+           @media screen and (max-width:480px) {
+                display:block;
+                align-self: center;
+                display: flex;
+              
+           }
+           @media screen and (max-width:768px) {
+            display:block;
+            align-self: center;
+            display: flex;
+          
+       }
+       @media screen and (max-width:1024px) {
+        display:block;
+        align-self: center;
+        display: flex;
+      
+   }
+          
+           span {
+            background: black;
+            width: 18px;
+            height: 2px;
+            margin-top: 2px;
+            @media screen and (max-width:480px) {
+               background-color: white;
+            }
+       }
+    
+    }
+       .active-steps {
+           display: none;
+           @media screen and (max-width:480px) {
+           display: block;
+         }
+         @media screen and (max-width:768px) {
+            display: block;
+          }
+          @media screen and (max-width:1024px) {
+            display: block;
           }
         }
+         .not-active {
+             display: none;
+             @media screen and (max-width:480px) {
+                 display: none;
+             }
+             @media screen and (max-width:768px) {
+                display: none;
+            }
+            @media screen and (max-width:1024px) {
+                display: none;
+              }
+         }
+       
+
+       .navbar_content {
+       
+        
+      
+         .login {
+           color: $loginColor;
+           cursor: pointer;
+           @media screen and (max-width:480px) {
+           color: $navColor;
+          }
+          
+           &:hover {
+               opacity: .8;
+           }
+         }
+     }
     }
+   
 }

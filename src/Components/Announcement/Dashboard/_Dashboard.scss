@@ -1,14 +1,26 @@
 @import '../../../assests/fonts/variable';
 
 .dashboard {
-    width: 21%;
+  
     @media screen and (max-width:480px) {
-      display:none;
+      display:block;
+      position: absolute;
+    left: 0px;
+    top: 34px;
+    z-index: 1;
     }
     @media screen and (max-width:768px) {
-      display: none;
+      display:block;
+      position: absolute;
+    left: 0px;
+    top: 34px;
+    z-index: 1;
     }
-   
+    @media screen and (max-width:1024px) {
+     width: 21%;
+    
+    z-index: 1;
+    }
     .dashboard_container {
         width: 212px;
         height: 100vh;
@@ -17,6 +29,9 @@
         background: white;
         @media screen and (max-width:768px) {
           width: 161px;
+        }
+        @media screen and (max-width:1024px) {
+        height: 95vh;
         }
         
         .bars {

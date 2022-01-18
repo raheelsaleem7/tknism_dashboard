@@ -48,8 +48,7 @@ function getData () {
                 </div>
 
                 <div className={toggleState === 2 ? "active-steps" : "not-active"} >
-            <SelectAudience data={ getData} 
-       />
+            <SelectAudience data={ getData}  />
            
 
                 <div className='last_btn'>

@@ -1,12 +1,34 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import Dashboard from '../Announcement/Dashboard/Dashboard'
 import './_CurrentAllote.scss'
 
 function CurrentAllote() {
+  const [toggleState, setToggleState] = useState (false);
+   
+  const toggleStep = (index) => {
+      if(toggleState) {
+          setToggleState(false)
+      } else {
+          setToggleState(true)
+      }
+  }
+  function getData () {
+      alert ("")
+  }
     return (
         <div className='allote'>
             <div className='allote_container'>
-                <Dashboard />
+            <div className='for_dash'>
+           <div className='menu_bar'  onClick= {() => toggleStep() }>
+               <span></span>
+               <span></span>
+               <span></span>
+              </div> 
+              <div className ={toggleState === true ? "active-steps" : "not-active"} > 
+              <Dashboard data={ getData}  />
+            </div>
+           </div>
+              
    <div className='main_allote'>
                 <div className='allote_header'>
                     <div>

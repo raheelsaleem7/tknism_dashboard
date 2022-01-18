@@ -10,60 +10,204 @@
         @media screen and (max-width:768px) {
               width: 100%;
         }
+         @media screen and (max-width:1024px) {
+            width: 100%;
+            height: 100vh;
+      }
+      @media screen and (max-width:1440px) {
+        width: 100%;
+        height: 100vh;
+  }
+    
+        .menu_bar{
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            transition: .3s;
+            display: none;
+            @media screen and (max-width:480px) {
+                 display:block;
+                 align-self: center;
+                 display: flex;
+               
+            }
+            @media screen and (max-width:768px) {
+             display:block;
+             align-self: center;
+             display: flex;
+           
+        }
+        @media screen and (max-width:1024px) {
+            display:block;
+            align-self: center;
+            display: flex;
+          
+       }
+     
+           
+            span {
+             background: black;
+             width: 18px;
+             height: 2px;
+             margin-top: 2px;
+             @media screen and (max-width:480px) {
+                background-color: white;
+             }
+        }
+     
+     }
+     .active-steps {
+       
+        @media screen and (max-width:480px) {
+        display: block;
+      }
+      @media screen and (max-width:768px) {
+         display: block;
+       }
+       @media screen and (max-width:1024px) {
+        display: block;
+      }
+     
+     }
+      .not-active {
+         
+          @media screen and (max-width:480px) {
+              display: none;
+          }
+          @media screen and (max-width:768px) {
+             display: none;
+         }
+         @media screen and (max-width:1024px) {
+            display: none;
+        }
+       
+      }
+    
         .announcement_main {
           
             width: 79%;
+            display: flex;
             @media screen and (max-width:480px) {
                 width: 100%;
             }
             @media screen and (max-width:768px) {
                 width: 100%;
             }
+            @media screen and (max-width:1024px) {
+                width: 100%;
+
+            }
+            @media screen and (max-width:1440px) {
+                width: 100%;
+
+            }
 
         
     .announcement_header {
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 18px;
+      
         @media screen and (max-width:480px) {
            padding: 8px;
+           justify-content: space-between;
         }
-        .an_heading {
-            font-family: $announcementFont;
+        @media screen and (max-width:768px) {
+            height: 45px;
+            padding:18px;
+         }
+        .menu_bar{
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            transition: .3s;
+            display: none;
             @media screen and (max-width:480px) {
-                 font-size: 12px;
+                 display:block;
+                 align-self: center;
+                 display: flex;
+               
             }
+            @media screen and (max-width:768px) {
+             display:block;
+             align-self: center;
+             display: flex;    
+            }
+            @media screen and (max-width:1024px) {
+                display:block;
+                align-self: center;
+                display: flex;    
+               }
+          
+           
+            span {
+             background: black;
+             width: 18px;
+             height: 2px;
+             margin-top: 2px;
+             @media screen and (max-width:480px) {
+                background-color: black;
+             }
         }
-        .header_content {
-            display:flex;
-            @media screen and (max-width:480px) {
-               margin-right: 50px;
-            }
-
-            .header_detail {
-                background-color: $dashHover;
-                color: $dashtext;
-                margin-right: 26px;
-                padding: 9px;
-                cursor: pointer;
-                transition: .3s;
-                font-family: $announcementFont;
-                font-size: 12px;
-                @media screen and (max-width:480px) {
-                   font-size: 8px;
-                   margin-right: 6px;
-                }
-                &:hover {
-                    background-color: $headerHover;
-                    color: white;
-                  
-                }
-              .header_name {
-
-              }
-            }
-        }
+     
+     }
+    
     }
+    .main_item {
+          width: 100%;
+    
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 23px;
+        justify-content: space-between;
+     @media screen and (max-width:480px) {
+         display: flex;
+         align-items: center;
+     }
+     @media screen and (max-width:768px) {
+         display: flex;
+         align-items: center;
+     }
+     @media screen and (max-width:1024px) {
+        display: flex;
+        align-items: center;
+        padding: 10px 19px;
+    }
+     .an_heading {
+         font-family: $announcementFont;
+         @media screen and (max-width:480px) {
+              font-size: 12px;
+         }
+     }
+     .header_content {
+         display:flex;
+         @media screen and (max-width:480px) {
+           
+         }
+
+         .header_detail {
+             background-color: $dashHover;
+             color: $dashtext;
+             margin-right: 26px;
+             padding: 9px;
+             cursor: pointer;
+             transition: .3s;
+             font-family: $announcementFont;
+             font-size: 12px;
+             @media screen and (max-width:480px) {
+                font-size: 7px;
+                margin-right: 6px;
+             }
+             &:hover {
+                 background-color: $headerHover;
+                 color: white;
+               
+             }
+           .header_name {
+
+           }
+         }
+     }
+ }
         }
+}
 }
